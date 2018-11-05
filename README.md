@@ -1,44 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Создать приложение-задачник.
 
-## Available Scripts
+Документацию по back-end можно найти тут:
+https://uxcandy.com/~shapoval/test-task-backend/docs.html 
 
-In the project directory, you can run:
+Задачи состоят из:
+- имени пользователя;
+- е-mail;
+- текста задачи;
+- картинки;
 
-### `npm start`
+Стартовая страница - список задач с возможностью сортировки по имени пользователя, email и статусу. Вывод задач нужно сделать страницами по 3 штуки (с пагинацией). Видеть список задач и создавать новые может любой посетитель без регистрации. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Перед сохранением новой задачи можно нажать "Предварительный просмотр".
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+К задаче можно прикрепить картинку. Требования к изображениям - формат JPG/GIF/PNG, не более 320х240 пикселей. При попытке загрузить изображение большего размера, картинка должна быть пропорционально уменьшена до заданных размеров.
 
-### `npm test`
+Сделайте вход для администратора (логин "admin", пароль "123"). Администратор имеет возможность редактировать текст задачи и поставить галочку о выполнении. Выполненные задачи в общем списке выводятся с соответствующей отметкой. В данный в back-end не реализована возможность логина, потому необходимо вывести форму-фальшивку, значения логина и пароля можно проверить прямо на клиенте.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+В приложении нужно использовать React. К дизайну особых требований нет, должно выглядеть аккуратно.
 
-### `npm run build`
+Результат нужно развернуть на любом бесплатном хостинге (например zzz.com.ua), чтобы можно было посмотреть его в действии. На github или bitbucket выкладывать не обязательно.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Для того, чтобы мы могли проверить код, пожалуйста, скопируйте в корневую папку проекта наш онлайн-редактор dayside (https://github.com/boomyjee/dayside). Таким образом редактор будет доступен по url <ваш проект>/dayside/index.php. Нужно дать PHP доступ на исполнение и запись к папке dayside. Попробуйте открыть dayside сами - Вы должны увидеть код своего приложения. При первом запуске редактор попросит установить пароль: пожалуйста, поставьте как в админке "123".

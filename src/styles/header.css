@@ -1,0 +1,48 @@
+.header {
+    background-color: #341913;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__addTask {
+    cursor: pointer;
+    flex-grow: 2;
+    margin:  auto 40px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.header__addTask:hover {
+    text-shadow: -1px 1px 0px rgb(100, 105, 98);
+}
+
+.header__logo {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.login-form {
+    padding: 20px
+}
+
+.login-form input{
+    border-width: 1px; 
+    margin: 2px 0;
+    background-color: #341913;
+    color: #BCC9B5;
+}
+
+.login-form input:focus{
+    outline-color: #BCC9B5;
+}
+
+.login-form button{
+    background-color: #341913;
+    color: #BCC9B5;
+    font-weight: 700;
+}
